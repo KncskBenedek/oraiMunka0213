@@ -8,7 +8,7 @@ package model;
  *
  * @author benedek
  */
-public class Auto {
+public class Auto extends Jarmu {
     private boolean defekt;
     
     public void kereketCserel(){
