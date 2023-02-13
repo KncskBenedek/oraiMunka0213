@@ -16,12 +16,17 @@ public class Auto extends Jarmu {
     }
     @Override
     public boolean halad(){
-         if(this.isUzemanyag() && Math.random() > 0.25){
-           this.setMegerkezett(true);
-           this.setUzemanyag(false);
-       }else{
-             this.defekt = true;
-         }
+        if(Math.random() > 0.25){
+            super.halad();
+        }else{
+            this.defekt = true;
+        }
+        
        return this.defekt;
     }
+
+    public boolean isDefekt() {
+        return defekt;
+    }
+    
 }

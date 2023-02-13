@@ -28,7 +28,7 @@ public abstract class Jarmu {
    }
    
    public  boolean halad(){
-       if(this.uzemanyag){
+       if(this.uzemanyag && this.beinditva){
            this.megerkezett = true;
            this.uzemanyag = false;
        }
@@ -47,16 +47,8 @@ public abstract class Jarmu {
         return megerkezett;
     }
 
-    public void setBeinditva(boolean beinditva) {
-        this.beinditva = beinditva;
-    }
 
-    public void setUzemanyag(boolean uzemanyag) {
-        this.uzemanyag = uzemanyag;
-    }
 
-    public void setMegerkezett(boolean megerkezett) {
-        this.megerkezett = megerkezett;
-    }
+
    
 }
