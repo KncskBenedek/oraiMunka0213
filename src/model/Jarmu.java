@@ -6,6 +6,10 @@ public abstract class Jarmu {
     private boolean beinditva;
     private boolean uzemanyag;
     private boolean megerkezett;
+
+    public Jarmu() {
+    }
+    
     
    public  void beindit(){
        
@@ -18,6 +22,7 @@ public abstract class Jarmu {
    }
    
    public  boolean halad(){
-      return true; 
-   }
+       return true;
+   };
+   
 }
